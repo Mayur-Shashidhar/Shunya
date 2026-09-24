@@ -8,6 +8,7 @@ import Preloader from "./components/Preloader";
 import HomePage from "./pages/Home";
 import EventsPage from "./pages/Events";
 import ArithemaniaPage from "./pages/Arithemania";
+import PinnaclePage from "./pages/Pinnacle";
 import PeoplePage from "./pages/People";
 import AboutPage from "./pages/About";
 import ScrollToTop from "./components/ScrollToTop";
@@ -26,6 +27,7 @@ export default function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/events" element={<EventsPage />} />
               <Route path="/events/arithemania" element={<ArithemaniaPage />} />
+              <Route path="/events/pinnacle3.0" element={<PinnaclePage />} />
               <Route path="/people" element={<PeoplePage />} />
               <Route path="/about" element={<AboutPage />} />
             </Routes>
