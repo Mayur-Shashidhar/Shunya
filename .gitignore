@@ -2,6 +2,7 @@ node_modules
 dist
 .env
 lighthouse-report.json
+*.DS_Store
 
 # SSH keys
 is

@@ -12,102 +12,83 @@ export default function People() {
 
   const coreTeam = [
     {
-      name: "Noel Jose",
+      name: "Madhu S",
       role: "Club Head",
-      image: "/team_pics/Noel_Club_Head.png",
-      id: "SH-2025-001"
+      image: "/team_pics/Madhu.jpg",
+      id: "SH-2026-001"
     },
     {
-      name: "Lakshya",
+      name: "Janhavi Rajpurohit",
       role: "Deputy Club Head",
-      image: "/team_pics/Lakshya_Deputy_Head.jpg",
-      id: "SH-2025-002"
+      image: "/team_pics/janhaviR.jpg",
+      id: "SH-2026-002"
     },
     {
-      name: "Pranav",
-      role: "Deputy Club Head",
-      image: "/team_pics/Pranav_Deputy_Head.jpeg",
-      id: "SH-2025-003"
-    },
-    {
-      name: "Khushi",
-      role: "Club Mentor",
-      image: "/team_pics/Khushi-mentor.JPG",
-      id: "SH-2025-004"
-    },
-    {
-      name: "Pragathi",
-      role: "Event Management Head",
-      image: "/team_pics/Pragathi_EVM.jpeg",
-      id: "SH-2025-005"
-    },
-    {
-      name: "C Kaustubh",
+      name: "S Mayur",
       role: "Technical Head",
-      image: "/team_pics/Kaustubh_Tech.jpeg",
-      id: "SH-2025-006"
+      image: "/team_pics/S%20Mayur.jpg",
+      id: "SH-2026-003"
     },
     {
-      name: "Dibya",
+      name: "Aryan Ravenkar",
+      role: "Math Head",
+      image: "/team_pics/AryanRevankar.jpg",
+      id: "SH-2026-004"
+    },
+    {
+      name: "Saiesh Shankar",
+      role: "Math Head",
+      image: "/team_pics/Saiesh.jpg",
+      id: "SH-2026-005"
+    },
+    {
+      name: "Pavitra",
       role: "Logistics Head",
-      image: "/team_pics/Dibya_Logs.jpeg",
-      id: "SH-2025-007"
+      image: "/team_pics/Pavitra.jpg",
+      id: "SH-2026-006"
     },
     {
-      name: "Janhavi",
-      role: "Math Head",
-      image: "/team_pics/Janhavi_math.jpeg",
-      id: "SH-2025-008"
+      name: "Bhavya",
+      role: "Logistics Head",
+      image: "/team_pics/bhavya.png",
+      id: "SH-2026-007"
     },
     {
-      name: "Madhu",
-      role: "Math Head",
-      image: "/team_pics/Madhu_math.jpeg",
-      id: "SH-2025-009"
+      name: "Nikita Mankani",
+      role: "OPERATIONS Head",
+      image: "/team_pics/Nikita.png",
+      id: "SH-2026-008"
     },
     {
-      name: "Nandani",
-      role: "Operations Head",
-      image: "/team_pics/Nandani_OPS.jpg",
-      id: "SH-2025-010"
+      name: "Sushveen",
+      role: "PR & Campaigning Head",
+      image: "/team_pics/Sushveen.jpeg",
+      id: "SH-2026-009"
     },
     {
-      name: "Nirav",
-      role: "Marketing and Sponsorship Head",
-      image: "/team_pics/Nirav_MNS.jpg",
-      id: "SH-2025-011"
+      name: "Atishay",
+      role: "Event Management Head",
+      image: "/team_pics/Atishay.webp",
+      id: "SH-2026-010"
     },
     {
-      name: "Nishita",
+      name: "Spoorthi Poonachandra",
+      role: "Event Management Head",
+      image: "/team_pics/Spoorthi.jpeg",
+      id: "SH-2026-011"
+    },
+    {
+      name: "Aditi Hubli",
       role: "Design Head",
-      image: "/team_pics/Nishita_Design.jpg",
-      id: "SH-2025-012"
+      image: "/team_pics/AditiMHubli.jpg",
+      id: "SH-2026-012"
     },
     {
-      name: "Paranshu",
-      role: "PR & Campaigning Head",
-      image: "/team_pics/Paranshu_PRC.jpg",
-      id: "SH-2025-013"
-    },
-    {
-      name: "Lakshya Budhauliya",
-      role: "PR & Campaigning Head",
-      image: "/team_pics/Lakshya_Budhauliya_PRC.jpeg",
-      id: "SH-2025-014"
-    },
-    {
-      name: "Pavan",
+      name: "Keerthi Shivakumar",
       role: "Hospitality Head",
-      image: "/team_pics/Pavan_Hospi.webp",
-      id: "SH-2025-015"
-    },
-    {
-      name: "Alisha",
-      role: "Hospitality Head",
-      image: "/team_pics/Alisha-hospi.jpeg",
-      id: "SH-2025-016"
-    },
-    
+      image: "/team_pics/Keerthi.jpeg",
+      id: "SH-2026-013"
+    }
   ];
 
   return (
@@ -133,7 +114,7 @@ export default function People() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             {coreTeam.map((member, index) => (
               <motion.div
-                key={index}
+                key={member.id}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.05 }}

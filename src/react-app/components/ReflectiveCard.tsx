@@ -1,6 +1,6 @@
 import React from 'react';
 import './ReflectiveCard.css';
-import { Fingerprint, Activity, Lock } from 'lucide-react';
+import { Fingerprint, Activity } from 'lucide-react';
 
 interface ReflectiveCardProps {
   className?: string;
